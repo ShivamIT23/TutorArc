@@ -1,7 +1,6 @@
 import { Play, Sparkles } from "lucide-react"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
-import { toast } from "sonner"
 import { useEffect, useState } from "react"
 
 interface Session {
