@@ -2,6 +2,7 @@ import express from "express"
 import cors from "cors"
 import prisma from "./db/prisma"
 import dotenv from "dotenv"
+import crypto from "crypto"
 dotenv.config()
 
 const PORT = process.env.PORT || 3000
