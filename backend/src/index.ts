@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 // Endpoint to start session
 app.post("/api/start-session", async (req, res) => {
     const unique_id = crypto.randomUUID();
-    const userurl = `http://localhost:5173/session/${unique_id}`;
+    const userurl = `https://tutor-arc.vercel.app/session/${unique_id}`;
   
     const session = await prisma.liveSession.create({
       data: { type: "admin", unique_id, userurl },
