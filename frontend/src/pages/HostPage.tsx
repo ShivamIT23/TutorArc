@@ -19,7 +19,7 @@ function HostPage() {
         setPrevSession(null)
     }
 
-    const res = await axios.post("http://localhost:3000/api/start-session");
+    const res = await axios.post("https://api.shivam23.me/api/start-session");
     console.log(res.data.unique_id)
     localStorage.setItem("session", JSON.stringify(res.data))
     navigate(`/session/${res.data.unique_id}`)

@@ -12,7 +12,7 @@ function StudentPage() {
   useEffect(() => {
     const fetchSession = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/api/session/${unique_id}`)
+        const res = await axios.get(`https://api.shivam23.me/api/session/${unique_id}`)
         if (res.data.message == "Session not found") {
           toast.error("Session not found, please start a new session")
           navigate("/")
